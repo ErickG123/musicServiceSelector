@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./images/musicimage_blur.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.header_content {
+    position: sticky;
+    top: 0px;
+}
+
+main header {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181818;
+    color: white;
+}
+
+.music_image {
+    width: 100%;
+}
+
+main header h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main header p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.header_arrow::after {
+    content: "";
+    left: 50%;
+    margin-left: -12px;
+    margin-bottom: -12px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #181818;
+    position: absolute;
+}
+
+.players_options {
+    display: flex;
+    flex-direction: column;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+}
+
+.options img {
+    width: 40%;
+}
+
+.options a {
+    background-color: rgb(255, 246, 246);
+    padding: 10px;
+    border-radius: 4px;
+    color: gray;
+    border: 1px solid lightgray;
+}
+
+.options:hover {
+    cursor: pointer;
+    background-color: rgb(232, 232, 232);
+}
+
+.options a:hover {
+    background-color: #181818;
+    color: white;
+    font-weight: 400;
+}
+
+footer {
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: 400;
+}
+
+footer a {
+    color: black;
+    font-weight: bold;
+}
+
+footer p:last-child {
+    margin: 8px;
+}
+
+/* botão no meio da image */
